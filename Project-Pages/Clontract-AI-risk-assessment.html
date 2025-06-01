@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Clontract: A Multi-Agent System for Spotting Risks in Voice
+		Acting Contracts and Negotiating Control Over Voice Data
+	</title>
+	<meta name="description" content="Comprehensive analysis of AI risks in the voice acting industry using PRAC³ framework">
+	<meta name="keywords" content="AI, voice acting, risk assessment, deepfakes, voice cloning, PRAC3">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&#038;display=swap"
+		  rel="stylesheet">
+	<link href="./assets/css/css2" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="ai-risk-observatory.org">
+	<meta property="twitter:url" content="https://ai-risk-observatory.org/">
+	<meta name="twitter:title" content="AI Risk Observatory for Voice Professionals">
+	<meta name="twitter:description" content="Comprehensive analysis of AI risks in the voice acting industry using PRAC³ framework">
+	<meta name="twitter:image" content="./assets/image2.png">
+
+	<script src="./assets/js/61c2f15e92f56eaa354c18452db280ac.js"></script>
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			new Splide('.splide').mount();
+		});
+	</script>
+</head>
+
+<body>
+
+<div>
+	<div class="constraint">
+		<div style="text-align: center;">
+			<h1>
+				Clontract: A Multi-Agent System for Spotting Risks in Voice Acting Contracts and Negotiating Control Over Voice Data
+			</h1>
+			<p>
+				<strong>First&nbsp;Author<sup>*1</sup>, Second&nbsp;Author<sup>*2</sup>, Third&nbsp;Author<sup>2</sup></strong>
+			</p>
+			<p>
+				<sup>1</sup>College of Information Sciences and Technology, Pennsylvania State University&nbsp;&nbsp;
+				<sup>2</sup>Institution Name
+				<br>
+				* Co-first authors</p>
+
+			<!-- Links Section -->
+			<div style="margin-top: 30px;">
+				<a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+				   style="display: inline-block; margin: 0 10px; padding: 10px 20px; background-color: #7F2B0A; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+					Paper
+				</a>
+				<a href="https://github.com/GPS-Research-Lab/2025-AgentX-Hackathon" target="_blank"
+				   style="display: inline-block; margin: 0 10px; padding: 10px 20px; background-color: #7F2B0A; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+					Code
+				</a>
+				<a href="https://agent-x-voice-actor.vercel.app/" target="_blank"
+				   style="display: inline-block; margin: 0 10px; padding: 10px 20px; background-color: #7F2B0A; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+					Clontract App
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	.summary {
+		max-width: 800px;
+		margin: 0 auto 40px auto;
+		padding: 20px 25px;
+		background-color: #F5F5F5;
+		border-left: 4px solid #7F2B0A;
+		border-radius: 4px;
+	}
+	.summary h2 {
+		margin-top: 0;
+		margin-bottom: 10px;
+		color: #7F2B0A;
+		font-size: 1.3rem;
+	}
+	.summary p {
+		margin: 0;
+		font-size: 1.1rem;
+		line-height: 1.5;
+	}
+
+	.button-row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 40px;
+	}
+
+	.spacer {
+		width: 80px;
+	}
+
+	.redirect-button {
+		max-width: 400px;
+		padding: 20px 25px;
+		background-color: #F5F5F5;
+		border-left: 4px solid #7F2B0A;
+		border-radius: 4px;
+		color: #7F2B0A;
+		font-size: 1.0rem;
+		font-family: 'IBM Plex Serif', serif;
+		font-weight: 700;
+		cursor: pointer;
+		text-align: left;
+		transition: background-color 0.3s ease;
+		border: none;
+	}
+	.redirect-button:hover {
+		background-color: #e0e0e0;
+	}
+	.main-content {
+		margin: 45px auto 0;
+		padding: 0 10px;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.main-text div {
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 45px;
+		font-size: 18px;
+		line-height: 26px;
+		padding: 0 10px;
+	}
+
+	.main-text strong {
+		font-weight: bold;
+	}
+
+	.responsive-figure {
+		width: 100%;
+		max-width: 800px;
+		margin: 20px auto;
+		text-align: center;
+	}
+
+	.responsive-figure img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.responsive-figure-larger {
+		width: 100%;
+		max-width: 950px;
+		margin: 20px auto;
+		text-align: center;
+	}
+
+	.responsive-figure-larger img {
+		width: 100%;
+		height: auto;
+	}
+
+	table {
+		width: 100%;
+		max-width: 100%;
+		border-collapse: collapse;
+		margin: 20px auto;
+		font-family: Arial, sans-serif;
+	}
+
+	th, td {
+		padding: 12px 15px;
+		border: 1px solid #ddd;
+		vertical-align: top;
+		text-align: left;
+	}
+
+	thead th {
+		background-color: #7F2B0A;
+		color: white;
+		font-weight: bold;
+	}
+
+	tbody tr:nth-child(even) {
+		background-color: #f9f9f9;
+	}
+
+	tbody tr:hover {
+		background-color: #f5f5f5;
+	}
+
+	.quote-box {
+		background-color: #f8f9fa;
+		border-left: 4px solid #7F2B0A;
+		padding: 15px 20px;
+		margin: 20px 0;
+		font-style: italic;
+		color: #555;
+	}
+
+	@media (max-width: 768px) {
+		.main-text div {
+			max-width: calc(100% - 6vw);
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 18px;
+			line-height: 26px;
+		}
+
+		.summary p {
+			font-size: 1.2rem;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		h3 {
+			font-size: 1.4rem;
+		}
+
+		.responsive-figure {
+			max-width: 100%;
+		}
+		.responsive-figure-larger {
+			max-width: 100%;
+		}
+
+		table {
+			font-size: 14px;
+		}
+
+		th, td {
+			padding: 8px 10px;
+		}
+	}
+</style>
+
+<div class="summary">
+	<h2>Executive Summary</h2>
+	<p>Early large-scale audio datasets, such as LibriSpeech, were built with hundreds of individual contributors whose voices were instrumental in the development of speech technologies, including audiobooks and voice assistants. Yet, a decade later, these same contributions have exposed voice actors to a range of risks. While existing ethical frameworks emphasize Consent, Credit, and Compensation (C³), they do not adequately address the emergent risks involving vocal identities that are increasingly decoupled from context, authorship, and control, such as data misuse by clients or downstream model or secondary usage of voice data by tiktoker who repurpose certain voice data for their reel, bad actors who cloned voice to impersonate.</p><br>
+	<p><strong>We introduce PRAC³, a conceptual risk assessment framework designed specifically for voice data contributors.</strong> Building upon the established "C³" model (Consent, Credit, Compensation) commonly applied to creative labor, PRAC³ adds Privacy, Reputation, and Accountability, informed by threat modeling of real-world scenarios from 20 voice actors. PRAC³ thus reconceptualizes voice actors as stakeholders, not merely content providers, and offers a comprehensive model for evaluating the risks they face.</p><br>
+	<p>Voice actors typically operate within a structured workflow:(a) discovery of voice-related work (e.g. audiobooks, animation, video games, dubbing, Text-to-Speech Model Training); (b) Audition ; (c) Contracting; (d) Recording and File sharing. Each phase comes with certain risks. Each phase presents distinct risks. Our project focuses specifically on the contract negotiation phase, where risk awareness is crucial but often lacking. Due to limited access to legal representation or union protection, many voice professionals are vulnerable to unclear or exploitative contract terms, especially those involving AI rights and data reuse.</p><br>
+	<p>To operationalize this, we built Clontract - a proof-of-concept multi-agent system designed to analyze and interpret voice actor contracts. We leveraged NIST Privacy Framework, OWASP Risk Assessment, and our context-specific PRAC³ framework of voice actors' risk to assess contextual risk in the contract and identify ambiguous clauses and flag potential AI-related risks before agreements are signed, whether with high-profile clients like HBO and Netflix or anonymous engagements through platforms such as ACX or Voice123. This tool is especially critical for independent voice actors, many of whom lack access to legal counsel or union support due to limited resources.</p>
+	<figure class="responsive-figure">
+		<img src="figures/Voice-phase-1.png" alt="AI trend">
+		<figcaption style="margin-top: 0.1em; font-size: 0.9em; font-style: italic; color: #555;">Risks and AI-related threats in different stages of voice acting work, including discovery, audition, contracting, recording and file sharing.</figcaption>
+	</figure>
+</div>
+
+<div class="main-text">
+	<div class="features-wrapper constraint">
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-12 mt-5 paragraph-spacing">
+
+				<h3>Who Are Voice Actors?</h3>
+				<p>In their routine professional activities, voice actors work across a range of sectors such as, commercials and advertising, followed by audiobooks, animation and cartoons, and E-Learning and educational content, video games, and podcasting and audio dramas, dubbing and localization, live performance and theatrical productions, each showing high demand across the industry.</p>
+
+				<p>In another way, voice actors and contributors are well-known voices because of their foundational role in the development of modern speech technologies. A notable innovation was the early large-scale audio datasets, LibriSpeech, derived from thousands of contributions to LibriVox and other public domain audiobook platforms, underpinned early breakthroughs in automatic speech recognition and the voice assistants we use today. These contributions, originally made in the spirit of open knowledge and accessibility, have since been repurposed into commercial AI pipelines often without consent, attribution, or safeguards [5]. A decade later, these same contributions have exposed voice actors to a range of harms and may automate, devalue, or displace the very actors who created them.</p>
+
+				<p>From our list of 20 participants, we created four personas based on years of experience and availability of resources. Four significant personas are: (a) Emerging Professionals (Low experience, Low resources); (b) Solo Defender (High experience, Low resources); (c) Delegator (Low experience, High resources); (d) Strategist (High experience, High resources). For instance, common traits of delegator personas include more than 5+ years of experience, strong home studio setups, relying on direct client relationships with some occasional platform work, proactive in using <a href="https://navavoices.org/2023/01/23/artificial-intelligence-rider/"> AI riders from NAVA</a> and often opting out if the client disagrees. Often, they have their own representative to assess contracts and negotiate client compliance with AI clauses. This group holds deep concerns over AI risks, especially unauthorized cloning, unauthorized voice usage for AI training.</p>
+
+				<figure class="responsive-figure">
+					<img src="figures/persona.png" alt="AI trend">
+					<figcaption style="margin-top: 0.1em; font-size: 0.9em; font-style: italic; color: #555;">Personas of Voice Actors</figcaption>
+				</figure>
+
+				<h3>PRAC³: A New Way to Understand Risk of Voice Data</h3>
+				<p>Voice data isn't just audio; it's biometric, meaning it can uniquely identify you. From audiobook narrators to anime dubbers, voice actors now face threats such as: Unauthorized cloning and deepfakes, Unpaid reuse across platforms, Hidden AI clauses in contracts, Perpetual rights grabs without clear compensation, and use of voice in erotic content.</p>
+
+				<p>From the interview, the original male voice of a voice assistant tool of major tech, recounted how a one-time session and a yearly non-compete fee evolved into widespread, unauthorized use of his voice.</p>
+
+				<div class="quote-box">
+					"It was released 5 or 6 years back. I regret not having a lawyer review the contract, which included broad terms like 'in any form or technology now known or unknown, in perpetuity.' I later found out my voice is rented to Y and Z companies. Interestingly got to know that from my daughter and friend. That didn't feel good. I hadn't understood how my voice would be used, but for a while, people kept asking if I did a hotel ad in Berlin or other projects. My voice ended up in explainer videos, commercials, and even a video game chatbox without additional pay. Since then, I've renegotiated for higher compensation. Still, the original deal locked me into a much lower rate especially compared to the female voice, who reportedly earns around $250k a year."
+				</div>
+
+				<p>Voice actors also found their voice being mismassed to create AI-generated voice content in controversial media such as, political, controversial media. A case –</p>
+
+				<div class="quote-box">
+					"I initially worked on a anime character which was normal. then they made that character do AI-generated porn... that reflects badly on me, which was never consented."
+				</div>
+
+				<p>Some also feared their voices could be embedded in propaganda or defamatory content, with no clear mechanism for recourse or correction. This lack of control over one's digital likeness raises questions about the professional and personal boundaries in the age of generative AI. Another incident which a TikToker used a voice sample from voice actor's website to create a reel:</p>
+
+				<div class="quote-box">
+					"At first, I hear my voice in the background, it seemed benign. Then I realized there was AI to clone certain words I never said. If those memes become more extreme, who is accountable– me, the person who cloned, or the TikToker?"
+				</div>
+
+				<p>Beyond the concerns of accountability, they had concerns of professional and economical reputation, such as, their voice association with low-quality productions or cloned by individuals could damage his credibility, as audiences might conflate the synthetic performance with the original artist. Another instance where there were incidents of opacity of content distribution chains and the inadequacy of existing legal measures</p>
+
+				<div class="quote-box">
+					"I don't doubt one day some content's gonna feature my voice . . . and I'm very much scared for that day to navigate legal world... more scared when legitimate companies and criminals alike, now a temptation to "rip off everybody" by harvesting voices, and our legal system is only starting to grapple with it."
+				</div>
+
+				<p>Based on the real-life scenarios (past and perceived future risks) from voice actors, we build the PRAC³ framework in assessing harms that emerge over time and beyond contractual boundaries. Voice actors experience three archetypal threat scenarios that encapsulate both direct and downstream risks. These scenarios highlight how harm is not limited to the moment of data creation but often arises through redistribution, secondary use, and platform-driven commodification.</p>
+				<ol type="a">
+					<li><strong>Voluntary, non-monetary contributors:</strong> Actors donate voice data for public good, only to have it later surface in unauthorized commercial tools.</li>
+					<li><strong>Monetized contractual contributors:</strong> Initial legal agreements include ambiguous language often enabling resale, transfer, or indefinite reuse of voice data, especially following corporate changes.</li>
+					<li><strong>Secondary, informal misuse:</strong> Legally recorded voices leak into meme culture, satire, or political propaganda via AI tools, distorting public perception and damaging actors' professional standing.</li>
+				</ol>
+
+				<figure class="responsive-figure">
+					<img src="figures/PRAC3-1.png" alt="AI trend">
+					<figcaption style="margin-top: 0.1em; font-size: 0.9em; font-style: italic; color: #555;">The PRAC³ framework, including six risk dimensions in the use of voice actors' data in the context of generative AI: Privacy, Reputation, Accountability, Consent, Compensation, and Credit.</figcaption>
+				</figure>
+
+				<p>PRAC³ stands for "Privacy, Reputation, Accountability, Consent, Credit, Compensation". Each dimension represents a critical vector of exposure or harm for voice actors in the AI data economy. Consent, Credit, and Compensation present foundational rights which often overlooked or bypassed in AI data pipelines. newly added components from voice actor's experience: Privacy which presents breaches of biometric identity through cloning or surveillance; Reputation, which represents harm from voice misuse in misaligned, offensive, or deceptive contexts and finally; Accountability which presents legal and technical gaps in traceability and recourse when voice actors data is misused by adversarial actors and harm general users.</p>
+
+				<p>Each PRAC³ component tackles a different threat:</p>
+				<ul>
+					<li><strong>Privacy:</strong> Can your voice be cloned or tracked?</li>
+					<li><strong>Reputation:</strong> Will your voice be used in inappropriate content?</li>
+					<li><strong>Accountability:</strong> Can you find out who misused your data?</li>
+					<li><strong>Consent, Credit, Compensation:</strong> Are you asked, acknowledged, and paid?</li>
+				</ul>
+
+				<h3>Clontract: AI-Powered Risk Assessment for Contract Negotiation</h3>
+				<p>At its core, Clontract is a team of AI agents that work together like a digital legal assistant. Think of it as a legal analyst, risk assessor, and negotiation strategist, all rolled into one but powered by a team of AI agents that talk to each other. Clontract uses a multi-agent architecture to parse, analyze, and advise on voice actor contracts. Clontract is built using Agno, a lightweight framework that enables multi-agent collaboration. Each agent plays a role.</p>
+
+				<table>
+					<thead>
+					<tr>
+						<th>Agent</th>
+						<th>Role</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td><strong>Coordinator</strong></td>
+						<td>Orchestrates tasks between agents</td>
+					</tr>
+					<tr>
+						<td><strong>Analyst</strong></td>
+						<td>Finds risky or vague clauses</td>
+					</tr>
+					<tr>
+						<td><strong>Researcher</strong></td>
+						<td>Pulls in laws, platform policies</td>
+					</tr>
+					<tr>
+						<td><strong>Strategist</strong></td>
+						<td>Gives negotiation tips and solutions</td>
+					</tr>
+					</tbody>
+				</table>
+				<figure class="responsive-figure">
+					<img src="figures/Workflow-1.png" alt="AI trend">
+					<figcaption style="margin-top: 0.1em; font-size: 0.9em; font-style: italic; color: #555;">Clontract Architecture Overview. We design an agentic multi-agent system to decompose the contract-related query and utilize task-specialist agents with different tools to generate comprehensive responses.</figcaption>
+				</figure>
+				<p>Each agent is equipped with tools:</p>
+				<ul>
+					<li>A PDF reader for parsing contracts.</li>
+					<li>Knowledge retrieval systems from a custom legal corpus (e.g., Amazon ACX, Voice123).</li>
+					<li>Text embedding for contextual understanding.</li>
+					<li>A web search module for pulling in live policy updates.</li>
+					<li>And, of course, a large language model (LLM) for interpretation and advice.</li>
+				</ul>
+
+				<p>The agents collaborate like a virtual legal roundtable. If a clause says, "voice can be reused in any medium", Clontract doesn't just flag it, it explains why it's risky, which PRAC³ dimensions are involved, and what you could ask for instead. This approach avoids the "one-shot" answer typical of other AI systems. Instead, it mimics a thoughtful, multi-step legal review.</p>
+
+				<h3>Real World Use: Amazon ACX Contract Example</h3>
+				<p>The researchers tested Clontract on audiobook contracts from Amazon ACX. Here's what it found:</p>
+
+				<p><strong>What Did It Do?</strong></p>
+				<ul>
+					<li>Parsed the full contract.</li>
+					<li>Identified AI-related risks like vague usage rights.</li>
+					<ul>
+						<li>Hidden clauses allowing AI-based voice replication</li>
+						<li>Vague language like "in any medium now known or later developed"</li>
+						<li>Poor protection against voice reuse without pay</li>
+					</ul>
+					<li>Applied the PRAC³ framework for categorization.</li>
+					<li>Applied NIST and OWASP to score risk levels from 0–100 in each dimension.</li>
+					<li>Generated user-facing negotiation advice like:
+						<div class="quote-box" style="margin-top: 0;">
+							"Clause 4 allows indefinite use of your voice in AI systems. We suggest requesting a time-bound license (e.g., 1 year) with opt-out rights."
+						</div>
+					</li>
+				</ul>
+
+				<p>The results were presented in clean markdown reports, with sections for "Key Risks", "Clause Analysis", and "Negotiation Tips" all accessible to someone without legal training.</p>
+
+
+				<figure class="responsive-figure" style="margin: 0 0 0 -15px;">
+					<img style="width: 200%;" src="figures/exp-risk-1.png" alt="AI trend">
+					<figcaption style="margin-top: 0.1em; font-size: 0.9em; font-style: italic; color: #555;">Task Performance Results. We use risk assessment as an example to show the structured output of Clontract.</figcaption>
+				</figure>
+
+				<h3>Real-World Impact: From Passive Victims to Active Agents</h3>
+				<p>Clontract's significance goes beyond technical innovation. We envision it as a catalyst for social impact and industry standardization in the evolving voice economy. Today, most voice actors, particularly freelancers and early-career professionals lack access to legal counsel, union protection, or clear industry guidelines. As a result, they face a constant stream of dense, legally complex contracts, often under time pressure, and are expected to sign away long-term rights, especially regarding AI usage, data licensing, and voice reuse with little clarity or recourse.</p>
+
+				<p>While informal community-driven safeguards exist, such as the Nava AI Rider, which some voice actors ask clients to include in contracts, these are far from universal. As our interviews revealed, such riders are often ignored or misunderstood, particularly by anonymous clients on freelance platforms, or by buyers in industries like gaming, e-learning, or television, who may be unaware of evolving ethical norms within the voice community. Without standardized, enforceable practices, these gaps expose voice actors to significant reputational, economic, and identity-related harm.</p>
+
+				<p>Clontract and the PRAC³ framework directly respond to this reality by offering a practical, scalable solution:</p>
+				<ul>
+					<li>Clontract helps voice actors identify and understand AI-related clauses, such as perpetual training rights, synthetic voice reuse, and sublicensing, that are often buried or vaguely worded. By surfacing these risks in plain language, the tool enables more informed consent, and allows actors to push back with confidence or seek modifications.</li>
+					<li>The PRAC³ framework repositions voice actors not just as service providers, but as data subjects and rights-holding stakeholders in AI systems. It incorporates Privacy, Reputation, Accountability, Consent, Credit, and Compensation, creating a lens through which actors, clients, and platforms can assess the ethical and professional implications of voice data use.</li>
+				</ul>
+				<p>Together, Clontract and PRAC³ enable:</p>
+				<ul>
+					<li>Contractual transparency in an otherwise opaque system.</li>
+					<li>Structured risk awareness that actors can use to inform their decisions.</li>
+					<li>A step toward standardized practices, such as auto-flagging missing AI riders or recommending best-practice clauses, even when dealing with anonymous or international clients.</li>
+				</ul>
+
+				<h3>Future Direction</h3>
+				<p>The current version is proof-of-concept. It hasn't undergone large-scale trials or legal clarification. Areas for improvement include:</p>
+				<ol>
+					<li>
+						<strong>Expanding the Knowledge Base:</strong> Current system includes contracts and policy documents from over 21 major voice platforms (e.g., Amazon ACX, Fiverr, Voice123), covering licensing terms, AI and data usage clauses, NDAs, and voice-over agreements. Moving forward, we aim to curate a more diverse set of contract samples from voice actors engaged in non-platform work such as individual projects, collaborations with agents, or contracts from production houses. This will significantly enrich the knowledge base, enabling more context-aware and personalized risk assessments.
+					</li>
+					<li>
+						<strong>Building a Large-Scale AI Risk Repository:</strong> We will develop a comprehensive risk repository with continuous risk reporting from voice actors. We will augment scenario simulation using large language models (LLMs) to generate diverse and anticipatory risk scenarios. The goal is to support the creation of predictive and scalable AI risk assessment models tailored to the voice acting industry and allow long-tailed risk of voice data sharing.
+					</li>
+					<li>
+						<strong>Evaluation and User-Centered Design:</strong> To ensure that Clontract effectively meets its intended goals, we will design and implement a robust evaluation strategy. This will involve assessing both system performance and user experience to ensure alignment with the project's objectives and the evolving needs of stakeholders. With a collaboration with NAVA (National Association of Voice Actors: NAVA) we will involve human legal experts and voice actors for a two-fold evaluation. Continuous feedback loops with users will guide iterative improvements and ensure practical relevance.
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br><br><br>
+
+	<style>
+		body {
+			font-family: 'IBM Plex Serif', serif;
+		}
+
+		.name {
+			font-weight: bold;
+			font-size: medium;
+		}
+
+		.details {
+			font-weight: normal;
+			font-size: small;
+		}
+
+		.signer ul {
+			list-style-type: none;
+			padding-left: 0;
+			margin: 0;
+		}
+
+		.signer li {
+			margin-bottom: 12px;
+		}
+	</style>
+
+</div>
+
+</body>
+
+</html>
