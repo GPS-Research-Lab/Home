@@ -550,24 +550,26 @@ h3 {
   left: 0;
   top: 0;
   border-radius: 10px;
-}ss
+}
 
 /* 1) Container around all buttons, handles shared spacing */
-.button-group {
-  margin-top: 30px;
-  text-align: center;           /* center buttons horizontally */
-}
+ .button-group {
+   margin-top: 30px;
+   text-align: center; /* center buttons horizontally */
+ }
+
+/*s*/
 
 /* 2) Primary button style for all three links */
 .btn-primary {
   display: inline-flex;         /* inline-flex allows centering icon+text */
   align-items: center;          /* vertically center icon & text */
-  margin: 0 10px;               /* left/right spacing between buttons */
+  margin: 0 3px;               /* left/right spacing between buttons */
   padding: 10px 20px;
   background-color: #7F2B0A;
   color: #fff;                  /* white text */
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 20px;
   font-weight: bold;
   font-family: 'Open Sans', sans-serif; /* or whatever font you're using */
   transition: background-color 0.2s ease;
@@ -584,3 +586,45 @@ h3 {
   display: inline-flex;
   align-items: center;
 }
+
+/* ─ Teaser / Demo Video Styles ────────────────────────────────────────── */
+
+/* 1) Reset any default padding if you’re not using Bulma’s .hero-body */
+.teaser {
+  font-family: 'Google Sans', sans-serif; /* match your page fonts */
+  padding: 2rem 0;                        /* vertical breathing room */
+  text-align: center;                     /* center children horizontally */
+}
+
+/* 2) Enforce a 16:9 aspect ratio container around the <video> */
+.teaser .video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;          /* adapt to your design; limits video on large screens */
+  margin: 0 auto;        /* 16:9 ratio (9 / 16 = 0.5625) */
+  height: 675px;
+  overflow: hidden;
+  border-radius: 8px;        /* optional rounded corners */
+  background: #000;          /* fallback background behind video */
+}
+
+/* 3) Make the <video> fill that 16:9 box exactly */
+.teaser .video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* preserve aspect ratio and crop overflow if needed */
+  border-radius: inherit;     /* match container’s rounding */
+}
+
+/* 4) Subtitle styling below the video */
+.teaser .subtitle {
+  margin-top: 1rem;          /* space above the subtitle */
+  color: #7F2B0A;            /* match your heading/brand color */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;         /* readable size for subtitles */
+  line-height: 1.4;
+}
+
