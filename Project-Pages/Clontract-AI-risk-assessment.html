@@ -73,7 +73,7 @@
 
 <style>
 	.summary {
-		max-width: 800px;
+		max-width: 1000px;
 		margin: 0 auto 40px auto;
 		padding: 20px 25px;
 		background-color: #F5F5F5;
@@ -129,7 +129,7 @@
 	}
 
 	.main-text div {
-		max-width: 1000px;
+		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 45px;
@@ -144,7 +144,7 @@
 
 	.responsive-figure {
 		width: 100%;
-		max-width: 800px;
+		max-width: 1000px;
 		margin: 20px auto;
 		text-align: center;
 	}
@@ -170,21 +170,22 @@
 		width: 100%;
 		max-width: 100%;
 		border-collapse: collapse;
-		margin: 20px auto;
+		margin: 0 auto;
 		font-family: Arial, sans-serif;
 	}
 
 	th, td {
-		padding: 12px 15px;
-		border: 1px solid #ddd;
+		padding: 8px 12px;
+		border: 1px solid #000;
 		vertical-align: top;
-		text-align: left;
+		/*text-align: left;*/
 	}
 
 	thead th {
-		background-color: #7F2B0A;
-		color: white;
+		background-color: #f2f2f2;
+		/*color: white;*/
 		font-weight: bold;
+		text-align: left;
 	}
 
 	tbody tr:nth-child(even) {
@@ -320,6 +321,215 @@
 					<li><strong>Accountability:</strong> Can you find out who misused your data?</li>
 					<li><strong>Consent, Credit, Compensation:</strong> Are you asked, acknowledged, and paid?</li>
 				</ul>
+
+				<table>
+					<caption style="margin-top: 0.1em; font-size: 1em; font-style: italic; color: #555;">
+						Reported data-misuse and AI-related incidents affecting professional voice actors.
+					</caption>
+					<thead>
+					<tr>
+						<th style="width: 5%;">ID</th>
+						<th style="width: 20%;">Scenario</th>
+						<th style="width: 25%;">Incident (Participant)</th>
+						<th style="width: 50%;">Analysis using PRAC³ Framework</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>1</td>
+						<td>Audition sample reused in national commercial</td>
+						<td>P17 discovered her voice in an ad she never recorded (P17)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Consent, Compensation, Accountability<br/>
+							<strong>Threat Agent:</strong> Client/Studio<br/>
+							<strong>Asset at Risk:</strong> Voice data, creative labor<br/>
+							<strong>Potential Impact:</strong> Unauthorized commercial use; loss of income; reputational risk<br/>
+							<strong>Mitigation Status:</strong> None – discovered post-facto
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Voice used in AI-generated adult content</td>
+						<td>Game mod used AI to create pornographic scenes with actor's voice (P7)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Reputation, Consent, Accountability<br/>
+							<strong>Threat Agent:</strong> Third-party modders<br/>
+							<strong>Asset at Risk:</strong> Public persona, moral integrity<br/>
+							<strong>Potential Impact:</strong> Defamation; emotional distress<br/>
+							<strong>Mitigation Status:</strong> Unreported; no recourse
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Exhibit A clause allows post-production cloning</td>
+						<td>Audiobook contract allowed voice replication without notice (P4)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Consent, Compensation, Accountability<br/>
+							<strong>Threat Agent:</strong> Publisher<br/>
+							<strong>Asset at Risk:</strong> Voice likeness; residual earnings<br/>
+							<strong>Potential Impact:</strong> Job displacement; IP erosion<br/>
+							<strong>Mitigation Status:</strong> Discovered post-signing
+						</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>AI voice scam using child’s cloned voice</td>
+						<td>Scam calls using cloned voice of loved one (P16)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Privacy, Identity, Accountability<br/>
+							<strong>Threat Agent:</strong> Cybercriminals<br/>
+							<strong>Asset at Risk:</strong> Biometric identity<br/>
+							<strong>Potential Impact:</strong> Financial fraud; emotional harm<br/>
+							<strong>Mitigation Status:</strong> Hypothetical/precautionary
+						</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Podcast platform AI-translates and clones voice</td>
+						<td>Spotify translated podcaster’s voice without opt-out (P19)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Consent, Privacy, Accountability<br/>
+							<strong>Threat Agent:</strong> Platform provider<br/>
+							<strong>Asset at Risk:</strong> Voice data; linguistic identity<br/>
+							<strong>Potential Impact:</strong> Unconsented speech generation<br/>
+							<strong>Mitigation Status:</strong> Actor manually obstructed usage
+						</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>No disclosure of voice reuse for AI training</td>
+						<td>P4 reported clause only found post-distribution</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Consent, Privacy, Compensation<br/>
+							<strong>Threat Agent:</strong> Client<br/>
+							<strong>Asset at Risk:</strong> Voice training data<br/>
+							<strong>Potential Impact:</strong> Unpaid AI training use<br/>
+							<strong>Mitigation Status:</strong> No consent captured
+						</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>AI-generated voice used in foreign language translation</td>
+						<td>Spotify used AI to translate podcaster's voice without clear opt-in (P16)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Privacy, Consent, Accountability<br/>
+							<strong>Threat Agent:</strong> Platform<br/>
+							<strong>Asset at Risk:</strong> Voice identity; language authenticity<br/>
+							<strong>Potential Impact:</strong> Loss of control over voice use, misrepresentation<br/>
+							<strong>Mitigation Status:</strong> Voice actor manually obstructed feature with background audio
+						</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Audition samples used without hiring actor</td>
+						<td>Actors heard their audition voices in released work (P14, P16, P17, P18, P20)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Consent, Compensation, Credit<br/>
+							<strong>Threat Agent:</strong> Client/Producer<br/>
+							<strong>Asset at Risk:</strong> Audition recordings; performance data<br/>
+							<strong>Potential Impact:</strong> Unpaid labor; reputational confusion<br/>
+							<strong>Mitigation Status:</strong> Typically undiscovered until after release
+						</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Voice used in modded game porn content</td>
+						<td>AI-generated adult content using voice actors' characters (P7)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Reputation, Privacy, Accountability<br/>
+							<strong>Threat Agent:</strong> Third-party users<br/>
+							<strong>Asset at Risk:</strong> Character alignment; public image<br/>
+							<strong>Potential Impact:</strong> Moral distress; brand damage<br/>
+							<strong>Mitigation Status:</strong> No action taken; actors unaware until fans reported
+						</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Hidden AI training clauses in audiobook contracts</td>
+						<td>Exhibit A allowed voice replication post-recording (P4)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Consent, Accountability, Compensation<br/>
+							<strong>Threat Agent:</strong> Publisher<br/>
+							<strong>Asset at Risk:</strong> Creative control; residuals<br/>
+							<strong>Potential Impact:</strong> Job replacement by AI; under-compensation<br/>
+							<strong>Mitigation Status:</strong> Clause discovered only post-facto
+						</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>Client reuses voice clip across projects without permission</td>
+						<td>P17’s voice reused in ad without consent</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Consent, Accountability, Credit<br/>
+							<strong>Threat Agent:</strong> Client<br/>
+							<strong>Asset at Risk:</strong> Vocal performance; authorship<br/>
+							<strong>Potential Impact:</strong> Unauthorized branding; reputational risk<br/>
+							<strong>Mitigation Status:</strong> No prior notification; discovered incidentally
+						</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>Scam calls using AI voice cloning of relatives</td>
+						<td>Actors fear scammers using their voice for fraud (P3, P16)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Privacy, Identity, Accountability<br/>
+							<strong>Threat Agent:</strong> Cybercriminals<br/>
+							<strong>Asset at Risk:</strong> Biometric voice identity<br/>
+							<strong>Potential Impact:</strong> Financial scams; family trauma<br/>
+							<strong>Mitigation Status:</strong> No technical prevention mechanisms
+						</td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>AI contracts lack explicit voice usage limitations</td>
+						<td>Contracts omit AI voice use clauses (P14, P1)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Consent, Privacy, Accountability<br/>
+							<strong>Threat Agent:</strong> Clients/Platforms<br/>
+							<strong>Asset at Risk:</strong> Legal rights over voice data<br/>
+							<strong>Potential Impact:</strong> Non-consensual reuse or AI training<br/>
+							<strong>Mitigation Status:</strong> Actors often overlook contract language
+						</td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td>Perpetual license buried in email agreements</td>
+						<td>Clients assume full rights from email threads (P10, P18)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Consent, Compensation, Credit<br/>
+							<strong>Threat Agent:</strong> Clients<br/>
+							<strong>Asset at Risk:</strong> Work ownership; royalties<br/>
+							<strong>Potential Impact:</strong> Lack of residuals; misappropriation<br/>
+							<strong>Mitigation Status:</strong> No formal legal review of communication
+						</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>Replacement by AI for minor roles or demo work</td>
+						<td>Lost work for minor roles to AI-generated voices (P14)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Compensation, Reputation, Accountability<br/>
+							<strong>Threat Agent:</strong> Clients<br/>
+							<strong>Asset at Risk:</strong> Job opportunities; creative career pathways<br/>
+							<strong>Potential Impact:</strong> Job displacement<br/>
+							<strong>Mitigation Status:</strong> Community advocacy; union action (no technical protection)
+						</td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td>Voice licensed and mass redistributed via third-party</td>
+						<td>Large tech company licensed actor's voice to third-party platforms (P12)</td>
+						<td>
+							<strong>PRAC³ Domain:</strong> Consent, Compensation, Accountability, Privacy<br/>
+							<strong>Threat Agent:</strong> Clients<br/>
+							<strong>Asset at Risk:</strong> Voice data; public image<br/>
+							<strong>Potential Impact:</strong> Ongoing uncompensated use; loss of control; reputational risk<br/>
+							<strong>Mitigation Status:</strong> Attempted renegotiation failed
+						</td>
+					</tr>
+					</tbody>
+				</table>
+
 
 				<h3>Clontract: AI-Powered Risk Assessment for Contract Negotiation</h3>
 				<p>At its core, Clontract is a team of AI agents that work together like a digital legal assistant. Think of it as a legal analyst, risk assessor, and negotiation strategist, all rolled into one but powered by a team of AI agents that talk to each other. Clontract uses a multi-agent architecture to parse, analyze, and advise on voice actor contracts. Clontract is built using Agno, a lightweight framework that enables multi-agent collaboration. Each agent plays a role.</p>
