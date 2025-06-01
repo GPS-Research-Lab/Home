@@ -550,4 +550,37 @@ h3 {
   left: 0;
   top: 0;
   border-radius: 10px;
+}ss
+
+/* 1) Container around all buttons, handles shared spacing */
+.button-group {
+  margin-top: 30px;
+  text-align: center;           /* center buttons horizontally */
+}
+
+/* 2) Primary button style for all three links */
+.btn-primary {
+  display: inline-flex;         /* inline-flex allows centering icon+text */
+  align-items: center;          /* vertically center icon & text */
+  margin: 0 10px;               /* left/right spacing between buttons */
+  padding: 10px 20px;
+  background-color: #7F2B0A;
+  color: #fff;                  /* white text */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif; /* or whatever font you're using */
+  transition: background-color 0.2s ease;
+}
+
+/* When hovered, slightly lighten/darken (you can tweak) */
+.btn-primary:hover {
+  background-color: #653019;    /* a darker shade for hover */
+}
+
+/* 3) Optional: give some space between icon and the label */
+.btn-primary .icon {
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
 }
